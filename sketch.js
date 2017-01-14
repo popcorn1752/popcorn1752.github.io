@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $("#data").submit(function() {
+    $("#data").submit(function(e) {
         alert("submitted");
         $.ajax({
             url: "https://formspree.io/tester1752@gmail.com",
