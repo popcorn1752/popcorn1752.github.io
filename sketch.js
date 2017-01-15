@@ -1,5 +1,5 @@
 function load() {
-    $.getJSON("https://github.com/popcorn1752/popcorn1752.github.io/blob/master/data.json", function(data) {
+    $.getJSON("https://popcorn1752.github.io/data.json", function(data) {
         console.log(data);
     });
 }
