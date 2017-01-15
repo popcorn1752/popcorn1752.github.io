@@ -1,4 +1,9 @@
+function load() {
+    alert($.getJSON("data.json"));
+};
+
 $(document).ready(function() {
+    load();
     $('#contact-form').submit(function() {
         var name = document.getElementById('inputName')
         var tet = document.getElementById('inputTET')
@@ -14,9 +19,10 @@ $(document).ready(function() {
                 data: $('#contact-form').serialize(),
                 datatype: 'json'
             });
-            //e.preventDefault();
-            //$(this).get(0).reset();
+
             alert("Message sent");
         }
     });
+
+
 });
