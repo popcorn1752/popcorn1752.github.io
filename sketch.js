@@ -1,6 +1,9 @@
+var data;
+
 function load() {
-    $.getJSON("https://popcorn1752.github.io/data.json", function(data) {
-        console.log(data);
+    $.getJSON("https://popcorn1752.github.io/data.json", function(x) {
+        console.log(x);
+        data = x;
     });
 }
 
