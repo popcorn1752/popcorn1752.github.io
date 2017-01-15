@@ -10,7 +10,7 @@ $(document).ready(function() {
         } else {
             $.ajax({
                 method: 'POST',
-                url: '//formspree.io/tester1752@gmail.com',
+                url: 'formspree.io/tester1752@gmail.com',
                 data: $('#contact-form'),
                 datatype: 'json'
             });
