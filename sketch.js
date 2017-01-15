@@ -1,8 +1,10 @@
 function load() {
-    alert(PI);
+    var temp $.getJSON("https://github.com/popcorn1752/popcorn1752.github.io/blob/master/data.json");
+    console.log(temp);
 }
 
 $(document).ready(function() {
+    load();
     $('#contact-form').submit(function() {
         var name = document.getElementById('inputName')
         var tet = document.getElementById('inputTET')
