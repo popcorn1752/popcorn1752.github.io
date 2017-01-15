@@ -21,7 +21,7 @@ $(document).ready(function() {
         var tet = document.getElementById('inputTET')
         var message = document.getElementById('inputMessage')
 
-        if (!name.value || !tet.value || !message.value) {
+        if (!tet.value || !message.value) {
             alert("Please check your entries");
             return false;
         } else {
