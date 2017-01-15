@@ -1,9 +1,8 @@
 function load() {
-    alert($.getJSON("data.json"));
-};
+    alert(PI);
+}
 
 $(document).ready(function() {
-    load();
     $('#contact-form').submit(function() {
         var name = document.getElementById('inputName')
         var tet = document.getElementById('inputTET')
@@ -23,6 +22,4 @@ $(document).ready(function() {
             alert("Message sent");
         }
     });
-
-
 });
