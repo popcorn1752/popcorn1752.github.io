@@ -11,7 +11,7 @@ $(document).ready(function() {
             $.ajax({
                 method: 'POST',
                 url: "https://formspree.io/tester1752@gmail.com",
-                data: $('#contact-form'),
+                data: $('#contact-form').serialize(),
                 datatype: 'json'
             });
             //e.preventDefault();
