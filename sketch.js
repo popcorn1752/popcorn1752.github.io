@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#contact-form').submit(function(e) {
+    $('#contact-form').submit(function() {
         var name = document.getElementById('inputName')
         var email = document.getElementById('inputEmail')
         var message = document.getElementById('inputMessage')
