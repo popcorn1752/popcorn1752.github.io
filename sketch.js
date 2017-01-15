@@ -14,7 +14,7 @@ $(document).ready(function() {
                 data: $('#contact-form'),
                 datatype: 'json'
             });
-            e.preventDefault();
+            //e.preventDefault();
             $(this).get(0).reset();
             alert("Message sent");
         }
