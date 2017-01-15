@@ -1,21 +1,22 @@
-// $(document).ready(function() {
-//     $('#contact-form').submit(function(e) {
-//         var name = $('#inputName')
-//         var email = $('#inputEmail')
-//         var message = $('#inputMessage')
-//
-//         if (name.val() == "" || email.val() == "" || message.val() == "") {
-//             $('.submit-fail').fadeToggle(400);
-//             return false;
-//         } else {
-//             $.ajax({
-//                 method: 'POST',
-//                 url: 'formspree.io/tester1752@gmail.com',
-//                 data: $('#contact-form'),
-//                 datatype: 'json'
-//             });
-//             e.preventDefault();
-//             $(this).get(0).reset();
-//         }
-//     });
-// });
+$(document).ready(function() {
+    $('#contact-form').submit(function(e) {
+        var name = document.getElementById('inputName')
+        var email = document.getElementById('inputEmail')
+        var message = document.getElementById('inputMessage')
+
+        if (!name.value || !email.value || !message.value) {
+            alertify.error("Please check your entries");
+            return false;
+        } else {
+            $.ajax({
+                method: 'POST',
+                url: '//formspree.io/james.tonkin1752@gmail.com',
+                data: $('#contact-form').serialize(),
+                datatype: 'json'
+            });
+            e.preventDefault();
+            $(this).get(0).reset();
+            alertify.success("Message sent");
+        }
+    });
+});
