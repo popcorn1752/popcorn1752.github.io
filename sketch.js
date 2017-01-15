@@ -1,6 +1,7 @@
 function load() {
-    $.getJSON("https://github.com/popcorn1752/popcorn1752.github.io/blob/master/data.json");
-    console.log(temp);
+    $.getJSON("https://github.com/popcorn1752/popcorn1752.github.io/blob/master/data.json", function(data) {
+        console.log(data);
+    });
 }
 
 $(document).ready(function() {
